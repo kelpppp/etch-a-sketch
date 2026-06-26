@@ -19,7 +19,7 @@ body {
 }
 
 .pixel {
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
     width: 50px;
     aspect-ratio: 1 / 1;
     border: 0.5px solid black;
@@ -28,6 +28,7 @@ body {
 
 .hover-on {
     background-color: black;
+    opacity: 0.1;
 }
 
 .new-grid-btn {

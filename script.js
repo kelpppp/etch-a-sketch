@@ -36,5 +36,8 @@ console.log(pixels);
 document.addEventListener("mouseover", (event) => {
     if (event.target.classList.contains("pixel")) {
         event.target.classList.add("hover-on");
+        const computedStyle = window.getComputedStyle(event.target);
+        let curOpacity = parseFloat(computedStyle.getPropertyValue("opacity"));
+        event.target.style.opacity = `${curOpacity += 0.10}`;
     }
 });
